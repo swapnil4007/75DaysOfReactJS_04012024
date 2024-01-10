@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="search" id="search" placeholder="Search here!" />
+  </body>
+</html>
+
+<script>
+  const searchElem = document.getElementById("search");
+  console.log({ searchElem });
+
+  // Attach Events
+  // INPUT EVENTS
+  // Key Up Event
+  searchElem.addEventListener("keyup", (event) => {
+    console.log("keyup: Input is changing: ", event.target, event.target.value);
+  });
+
+  // Key Down Event
+  searchElem.addEventListener("keydown", (event) => {
+    /* console.log(
+      "keydown: Input is changing: ",
+      event.target,
+      event.target.value
+    ); */
+  });
+</script>

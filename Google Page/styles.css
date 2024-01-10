@@ -1,0 +1,288 @@
+/* Inside styles.css */
+
+
+/* Inside styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+body.dark-theme {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+/* Dark theme styles for header */
+body.dark-theme header {
+    background-color: #333333; /* Dark theme background color for the header */
+    color: #ffffff;
+}
+
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.material-icons {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-icon {
+    padding: 10px;
+    color: #9AA0A6;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.mic-icon, .camera-icon {
+    padding: 10px;
+    max-height: 24px; /* Adjust the height to match your image size */
+    max-width: 24px; /* Adjust the width to match your image size */
+}
+
+
+.recent-tabs {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.tab-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-icon {
+    margin: 0 30px;
+    text-align: center;
+    position: relative;
+}
+
+.icon-circle {
+    background-color: rgba(169, 169, 169, 0.5); /* Transparent gray */
+    border-radius: 50%;
+    padding: 10px; /* Adjust padding as needed */
+    position: relative;
+}
+
+.icon-circle img {
+    max-height: 32px; /* Adjust the height to match your icon size */
+    max-width: 32px; /* Adjust the width to match your icon size */
+    display: block; /* Remove extra space below inline elements */
+    margin: 0 auto; /* Center the image within the circle */
+}
+
+.icon-name {
+    position: absolute;
+    bottom: -30px; /* Adjust the value to position the name precisely below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-size: 12px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+.material-icons {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    max-width: 600px; /* Set a maximum width for the search bar 
+    margin: 0 auto; /* Center the search bar within the header 
+    background-color: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-icon {
+    padding: 10px;
+    color: #9AA0A6;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
+
+.mic-icon {
+    padding: 10px;
+    color: #4285F4;
+}
+
+.camera-icon {
+    padding: 10px;
+    color: #0F9D58; /* Google Green 
+}
+
+*/
+
+
+
+
+/* Inside styles.css 2*/
+/*
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Viewport height, makes sure the content is centered vertically 
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+    width: 100%;/* Ensure the header takes the full width of the viewport 
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+.material-icons {
+    font-size: 24px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.search-bar {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+textarea {
+    padding: 10px;
+    width: 400px;
+    font-size: 16px;
+    resize: none;
+    border-radius: 15px; /* Set the border-radius for curved corners 
+    border: 1px solid #ccc; /* Add a border for better visibility 
+    position: relative;
+}
+
+/* Position icons inside the textarea 
+textarea ~ i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+*/
+
+
+
+/*body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    max-width: 200px;
+    height: auto;
+}
+
+.search-bar {
+    margin-top: 20px;
+}
+
+input {
+    padding: 10px;
+    width: 400px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 15px;
+    margin-left: 5px;
+    font-size: 16px;
+}*/

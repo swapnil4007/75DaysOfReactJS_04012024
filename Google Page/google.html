@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <title>Google</title>
+  </head>
+  <body>
+    <!--button id="dark-theme-toggle">
+      <span id="theme-icon">&#127769;</span>
+    </button-->
+
+    <header>
+      <img src="googlelogo_color_272x92dp.png" alt="Google Logo" />
+
+      <div class="search-bar">
+        <i class="material-icons search-icon">search</i>
+        <input
+          type="text"
+          name="search"
+          placeholder="Search Google or type a URL"
+        />
+        <img src="mic.png" alt="Mic Icon" class="mic-icon" />
+        <img src="camera.png" alt="Camera Icon" class="camera-icon" />
+      </div>
+    </header>
+
+    <section class="recent-tabs">
+      <div class="tab-icons">
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="youtube.png" alt="Tab 1" />
+          </div>
+          <span class="icon-name">YouTube</span>
+        </div>
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="facebook.png" alt="Tab 2" />
+          </div>
+          <span class="icon-name">Facebook</span>
+        </div>
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="whatsapp.png" alt="Tab 3" />
+          </div>
+          <span class="icon-name">WhatsApp</span>
+        </div>
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="linkedin.png" alt="Tab 3" />
+          </div>
+          <span class="icon-name">LinkedIn</span>
+        </div>
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="Amazon_icon.svg.png" alt="Tab 3" />
+          </div>
+          <span class="icon-name">Amazon</span>
+        </div>
+      </div>
+
+      <!-- Add more icons as needed -->
+    </section>
+
+    <section class="recent-tabs">
+      <div class="tab-icons">
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="linkedin.png" alt="Tab 3" />
+          </div>
+          <span class="icon-name">LinkedIn</span>
+        </div>
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="Amazon_icon.svg.png" alt="Tab 3" />
+          </div>
+          <span class="icon-name">Amazon</span>
+        </div>
+
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="youtube.png" alt="Tab 1" />
+          </div>
+          <span class="icon-name">YouTube</span>
+        </div>
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="whatsapp.png" alt="Tab 3" />
+          </div>
+          <span class="icon-name">WhatsApp</span>
+        </div>
+        <div class="tab-icon">
+          <div class="icon-circle">
+            <img src="facebook.png" alt="Tab 2" />
+          </div>
+          <span class="icon-name">Facebook</span>
+        </div>
+      </div>
+
+      <!-- Add more icons as needed -->
+    </section>
+    <!--input type="text" value="search google or type URL" /-->
+  </body>
+
+  <script>
+    /*document.addEventListener("DOMContentLoaded", function () {
+      const darkThemeToggle = document.getElementById("dark-theme-toggle");
+
+      darkThemeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+      });
+    });*/
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const darkThemeToggle = document.getElementById("dark-theme-toggle");
+      const themeIcon = document.getElementById("theme-icon");
+
+      darkThemeToggle.addEventListener("click", function () {
+        document.body.classList.toggle("dark-theme");
+        updateThemeIcon();
+      });
+
+      function updateThemeIcon() {
+        const isDarkTheme = document.body.classList.contains("dark-theme");
+        themeIcon.innerHTML = isDarkTheme ? "&#127774;" : "&#127769"; // Sun icon for light theme
+
+        const themeIcon = document.getElementById("theme-icon1");
+        themeIcon.src = isDarkTheme ? "moon.png" : "sun.png"; // Moon and sun images
+        themeIcon.alt = isDarkTheme ? "Moon Icon" : "Sun Icon";
+      }
+    });
+  </script>
+</html>

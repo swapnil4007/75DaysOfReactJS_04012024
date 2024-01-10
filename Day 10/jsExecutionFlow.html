@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+<script>
+  var a = 10; // Functional Scope -> Since it's in Global -> Global Scope
+  let b = 20;
+  const c = "Anika";
+
+  function addNums() {
+    let uName = "Rahul";
+    function inner2() {
+      let uName2 = "uday";
+      function inner3() {
+        let uName3 = "Vishal";
+        function inner4() {
+          let uName4 = "Manish";
+        }
+
+        inner4();
+      }
+      inner3();
+    }
+    inner2();
+  }
+
+  addNums();
+
+  console.log("Hello World");
+
+  let a2 = "Rajat";
+  var a3 = "Tarun";
+</script>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input
+      type="search"
+      id="search"
+      placeholder="Search here!"
+      class="search"
+    />
+  </body>
+</html>
+
+<script>
+  const searchElem = document.getElementById("search");
+  console.log({ searchElem });
+
+  // Attach Events
+
+  // Key Up Event
+  searchElem.addEventListener("keyup", (event) => {
+    //console.log("keyup: Input is changing: ", event.target, event.target.value);
+
+    /* console.log("KeyUp: event.target: ", event.target);
+    console.log("KeyUp: type ", event.target.type);
+    console.log("KeyUp: placeholder: ", event.target.placeholder);
+    console.log("KeyUp: id: ", event.target.id);
+    console.log("KeyUp: className: ", event.target.className);
+    console.log("KeyUp: value: ", event.target.value); */
+
+    // Destructure
+    const { type, placeholder, id, className, value } = event.target;
+
+    console.log("KeyUp: event.target: ", event.target);
+    console.log("KeyUp: type ", type);
+    console.log("KeyUp: placeholder: ", placeholder);
+    console.log("KeyUp: id: ", id);
+    console.log("KeyUp: className: ", className);
+    console.log("KeyUp: value: ", value);
+  });
+
+  // Key Down Event
+  searchElem.addEventListener("keydown", (event) => {
+    /* console.log(
+      "keydown: Input is changing: ",
+      event.target,
+      event.target.value
+    ); */
+  });
+</script>
+
+<script>
+  const profile = {
+    name: "Anika",
+    city: "Mumbai",
+    state: "Maharashtra",
+    company: "LTIMindtree",
+    newCompany: "Will Let you know",
+  };
+
+  console.log("Name: ", profile.name);
+  console.log("city: ", profile.city);
+  console.log("state: ", profile.state);
+  console.log("company: ", profile.company);
+  console.log("newCompany: ", profile.newCompany);
+  console.log("country: ", profile.country);
+
+  const {
+    name,
+    city,
+    state,
+    company,
+    newCompany = "NA",
+    country = "NA",
+  } = profile;
+
+  console.log("Name: ", name);
+  console.log("city: ", city);
+  console.log("state: ", state);
+  console.log("company: ", company);
+  console.log("newCompany: ", newCompany);
+  console.log("country: ", country);
+</script>

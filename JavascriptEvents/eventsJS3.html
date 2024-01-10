@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click:Events</title>
+  </head>
+  <body>
+    <button id="first">First</button>
+    <button id="second">Second</button>
+    <button id="third">Third</button>
+    <button id="fourth">Fourth</button>
+    <div id="fifth">Fifth</div>
+  </body>
+</html>
+
+<script>
+  //MOUSE EVENTS
+
+  const firstBtn = document.getElementById("first");
+  const secondBtn = document.getElementById("second");
+  const thirdBtn = document.getElementById("third");
+  const fourthBtn = document.getElementById("fourth");
+  const fifthDiv = document.getElementById("fifth");
+
+  // You can now use these variables to manipulate these elements or add event listeners, for example:
+  firstBtn.addEventListener("click", () => {
+    // do something when the first button is clicked
+    console.log("First Clicked");
+  });
+
+  secondBtn.addEventListener("click", () => {
+    // do something when the second button is clicked
+    console.log("Second Clicked");
+  });
+
+  thirdBtn.addEventListener("click", () => {
+    // do something when the third button is clicked
+    console.log("Third Clicked");
+  });
+
+  fourthBtn.addEventListener("click", () => {
+    // do something when the fourth button is clicked
+    console.log("Fourth Clicked");
+  });
+
+  // The fifth element is a div, so you can modify its content or styles, for instance:
+  fifthDiv.addEventListener("click", () => {
+    // do something when the fourth button is clicked
+    console.log("Fifth Clicked");
+  });
+</script>
+
+<script>
+  const logEvent = (data) => console.log("Data: ", data);
+
+  const attachEvent = (element, eventName) =>
+    element.addEventListener(eventName, logEvent);
+
+  attachEvent(firstBtn, "click");
+  attachEvent(secondBtn, "click");
+  attachEvent(thirdBtn, "click");
+  attachEvent(fourthBtn, "click");
+  attachEvent(fifthDiv, "click");
+</script>
