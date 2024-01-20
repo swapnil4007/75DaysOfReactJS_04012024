@@ -1,93 +1,21 @@
-import React from 'react';
-import RegistrationForm from './Assignment/A1-FormDesign/InputForm3';
+import React from "react";
+//import HobbiesFiller from "./HobbyPickerTask/Assignment2";
+//import HobbiesFiller from "./HobbyPickerTask/AnkitCode";
+//import AnkitCode from "./HobbyPickerTask/AnkitCode";
+//import TodoList from "./ToDoList Task/ToDoList";
+//import ToggleUI from "./Day-6 UseState/3.ToggleUI";
+//import StaleCounter from "./Day-7/staleCounter";
+//import ShowProducts from "./Day-9/1.show-data";
+//import ShowData from "./Day-9/2.show-data2";
+//import Users from "./Day-9/2.Ankit-show-data3";
+import SearchUser from "./Assignment/Search_List/search-list";
 
 function App() {
   return (
     <div className="App">
-      <RegistrationForm />
+      <SearchUser />
     </div>
   );
 }
 
 export default App;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
-
-export default App*/

@@ -1,0 +1,39 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+.form-element {
+    margin-bottom: 20px;
+  }
+  
+  .List {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .List ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .List li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .List li span {
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  
+  .List li button {
+    margin-left: 10px;
+    cursor: pointer;
+  }
