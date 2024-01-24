@@ -8,13 +8,25 @@ import React from "react";
 //import ShowProducts from "./Day-9/1.show-data";
 //import ShowData from "./Day-9/2.show-data2";
 //import Users from "./Day-9/2.Ankit-show-data3";
-import SearchUser from "./Assignment/Search_List/search-list";
+//import SearchUser from "./Assignment/Search_List/search-list";
+//import AppRouter from "./Day-10/AppRouter";
+import ProductList from "./Assignment/Product-route/product-list";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import ProductDetail from "./Assignment/Product-route/product-details";
 
 function App() {
   return (
-    <div className="App">
-      <SearchUser />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<ProductList />} />
+        <Route
+          path="/Assignment/Product-route/product-details/:id"
+          element={<ProductDetail />}
+        />
+      </Routes>
+    </Router>
   );
 }
 
